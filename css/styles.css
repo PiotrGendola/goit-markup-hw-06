@@ -643,6 +643,7 @@ ul {
 }
 
 .newsletter-input:hover,
+.newsletter-input:focus-within,
 .newsletter-input:focus {
     border-color: var(--web-style-color);
 }
@@ -811,7 +812,8 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-container:hover input ~ .checkmark {
+.check-container:hover input ~ .checkmark,
+.check-container:focus input ~ .checkmark {
     border-color: var(--web-style-color);
 }
 
